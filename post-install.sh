@@ -32,7 +32,7 @@ echo "Instalando o grub em /mnt/boot..." ; sleep 2
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck ; grub-mkconfig -o /boot/grub/grub.cfg 
 
 # Instala o xorg + extras:
-pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xrandr alsa alsa-lib alsa-utils alsa-oss mesa xf86-video-intel vulkan-intel intel-ucode ttf-dejavu ttf-liberation noto-fonts nerd-fonts-hack
+pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xrandr alsa alsa-lib alsa-utils alsa-oss mesa xf86-video-intel vulkan-intel intel-ucode ttf-dejavu ttf-liberation noto-fonts nerd-fonts-hack
 
 # Instala aplicações:
 pacman -S --noconfirm wget git curl p7zip file-roller ntfs-3g hdparm mtools dosfstools cups gvfs gvfs-mtp xdg-user-dirs xdg-utils thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman tumbler pluma ristretto xfce4-screenshooter xfce4-terminal neofetch dmenu hsetroot xcompmgr numlockx firefox-i18n-pt-br polkit-gnome lxappearance vlc qbittorrent
